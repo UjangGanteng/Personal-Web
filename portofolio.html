@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Hidup - Magang Kelistrikan</title>
+    <style>
+        /* Menggunakan font premium dari Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Roboto:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0a3d4b, #001a22); /* Gradasi biru gelap ke hitam elegan */
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #f1c40f; /* Warna gold untuk kesan premium */
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 5px;
+            color: #ecf0f1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .skills ul, .experience ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li, .experience li {
+            background-color: #1abc9c;
+            color: white;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 1s ease, color 1s ease;
+        }
+
+        .skills li:hover {
+            background-position: 100% 100%;
+            animation: rainbow 3s ease-in-out infinite;
+            background-image: linear-gradient(45deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            background-size: 400% 400%;
+        }
+
+        /* Animasi pelangi */
+        @keyframes rainbow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact input:focus, .contact textarea:focus {
+            border-color: #f1c40f; /* Warna gold saat fokus */
+            outline: none;
+        }
+
+        .contact button {
+            background-color: #f1c40f;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #d4ac0d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #333;
+            color: #ecf0f1;
+            font-size: 1em;
+            margin-top: 50px;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #f1c40f;
+            margin-bottom: 20px;
+        }
+
+        /* Animasi untuk efek loading */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portofolio Hidup - [Nama Anda]</h1>
+    <p>Calon Magang di Bidang Kelistrikan dan Instalasi PLTS</p>
+</header>
+
+<div class="container fade-in">
+    <!-- Tentang Saya -->
+    <section class="about-me card">
+        <h2>Tentang Saya</h2>
+        <div style="text-align: center;">
+            <!-- Foto Diri -->
+            <img src="path-to-your-photo.jpg" alt="Foto Diri" class="profile-img">
+        </div>
+        <p>Saya seorang mahasiswa yang bersemangat di bidang kelistrikan, dengan pengalaman dalam pelatihan PLTS dan instalasi penerangan listrik. Saat ini, saya menjabat sebagai Wakil Bendahara Umum di Himpunan Mahasiswa PVTE. Saya ingin mengembangkan keterampilan dan pengalaman saya lebih lanjut dengan bergabung sebagai magang di bidang kelistrikan, khususnya instalasi PLTS.</p>
+    </section>
+
+    <!-- Keterampilan -->
+    <section class="skills card">
+        <h2>Keterampilan</h2>
+        <ul>
+            <li>Instalasi Penerangan Listrik</li>
+            <li>Pemasangan dan Pemeliharaan PLTS (Pembangkit Listrik Tenaga Surya)</li>
+            <li>Pencatatan dan Analisis Data Sistem PLTS</li>
+            <li>Pemrograman Dasar (HTML, CSS, JavaScript)</li>
+        </ul>
+    </section>
+
+    <!-- Pengalaman -->
+    <section class="experience card">
+        <h2>Pengalaman</h2>
+        <h3>Pelatihan PLTS</h3>
+        <p>Saya telah mengikuti beberapa pelatihan terkait PLTS, yang meliputi pemasangan, pemeliharaan, dan pemantauan sistem PLTS untuk keperluan rumah tangga dan industri kecil.</p>
+        <h3>Instalasi Penerangan Listrik</h3>
+        <p>Pengalaman di lapangan dalam menginstalasi sistem penerangan listrik baik di area rumah tangga maupun publik.</p>
+        <h3>Wakil Bendahara Umum - Himpunan Mahasiswa PVTE</h3>
+        <p>Saat ini saya menjabat sebagai Wakil Bendahara Umum di Himpunan Mahasiswa PVTE, di mana saya terlibat dalam pengelolaan keuangan dan mendukung kegiatan organisasi.</p>
+    </section>
+
+    <!-- Kontak -->
+    <section class="contact card">
+        <h2>Kontak</h2>
+        <form id="contactForm">
+            <label for="name">Nama</label>
+            <input type="text" id="name" name="name" required placeholder="Nama Anda">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email Anda">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" required placeholder="Tulis pesan Anda"></textarea>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Portofolio Hidup | [Nama Anda]</p>
+</footer>
+
+<script>
+    // JavaScript untuk Form Kontak
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Mendapatkan nilai dari form
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Validasi input
+        if (name && email && message) {
+            alert('Pesan Anda telah terkirim!\nNama: ' + name + '\nEmail: ' + email + '\nPesan: ' + message);
+        } else {
+            alert('Harap lengkapi semua kolom!');
+        }
+    });
+</script>
+
+</body>
+</html>
